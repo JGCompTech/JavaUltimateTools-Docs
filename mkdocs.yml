@@ -22,3 +22,4 @@ nav:
   - Security Tools: SecurityTools/index.md
   - Utils : Utils/index.md
 - Changelog: changelog.md
+- JavaDoc: http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools
