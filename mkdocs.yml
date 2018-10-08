@@ -2,7 +2,7 @@ site_name: Java Ultimate Tools Documentation
 
 site_description: The Official Documentation For The Java Ultimate Tools Library
 
-theme: cinder
+theme: readthedocs
 
 site_author: Joshua Gager
 
