@@ -1,0 +1,24 @@
+site_name: Java Ultimate Tools Documentation
+
+site_description: The Official Documentation For The Java Ultimate Tools Library
+
+theme: cinder
+
+site_author: Joshua Gager
+
+repo_url: https://github.com/JGCompTech/JavaUltimateTools-Docs
+repo_name: GitHub
+
+nav:
+
+- Home: index.md
+- Classes:
+  - Auth System: AuthSystem/index.md
+  - Database Tools: DatabaseTools/index.md
+  - Dialogs: Dialogs/index.md
+  - Event Management: EventManagement/index.md
+  - HWInfo : HWInfo/index.md
+  - OSInfo: OSInfo/index.md
+  - Security Tools: SecurityTools/index.md
+  - Utils : Utils/index.md
+- Changelog: changelog.md

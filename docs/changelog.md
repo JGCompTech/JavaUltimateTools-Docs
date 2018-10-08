@@ -1,0 +1,83 @@
+#JUT Version Changelog
+
+###Version 1.5.0 changes (10/07/2018):
+* **Updated JDK to Java 10**
+* Login Dialogs now don't require the use of Platform.runLater()
+* Message Boxes now don't require the use of Platform.runLater()
+* Message Box Default button is now in the right order.
+* Massive changes to authentication and permissions system
+* Renamed jbdc to jdbc
+* Removed all deprecated methods from 1.4.0
+* Updated javadoc
+* Replaced some loops with streams
+* Added trim to all string isEmpty checks
+* Added UTF_8 protection
+* Added ExceptionUtils class for use in junit tests
+* All password hashing now uses BCrypt replacing SHA-512
+* Other minor fixes
+
+###Version 1.4.2 changes (1/23/2018):
+* Fixed fatal error with isUserLoggedIn method
+
+###Version 1.4.1 changes (1/22/2018):
+* Added UserManagerException
+* Added PasswordHashingFailedException
+* Added isAdminLoggedIn method
+* Added getAdminOverride and getUserVerification methods
+* Added requireAdmin and requireAndVerifyAdmin methods
+* Added isLoggedIn method
+* Fixed rare bugs with loginUser and logoutUser methods
+* Fixed exception that was thrown if user did not exist on login dialog
+* Limited number of SQLException and GeneralSecurityException checked exceptions
+* Changed Session Manager dialogs to use instance vars for parameters(old methods deprecated)
+
+###Version 1.4.0 changes (1/19/2018):
+* Added User Management Classes (UserManager, UserAccount, UserRoleManager and UserRole)
+* Added Permission Management Classes (Permission Manager and Permission)
+* Added Session Management Classes (Session Manager, MultiSessionManager and Session)
+* Added Database Builder Classes For Building SQL Code
+* Added HyperSQL Database Support
+* Added Custom Event/Event Handler System
+* Added New Utilities Classes (StringUtils, NumberUtils and CollectionUtils)
+
+NOTE: Some API changes have occurred:
+* Moved Database.Users class to UsersManager class
+* Made Database class constructor auto-connect to database
+* Deprecated DatabaseConnectionInfo fields and replaced with getters/setters
+* Made all utility classes final and have private constructors
+* Made all method parameters and most existing classes final
+* Added period to first line of all javadoc comments
+* Updated SecurityTools.getFileHash to use Apache Commons Codec Library (Java 9 Fix)
+* Renamed ReInitalizeHW to ReInitializeHW
+* Renamed ReInitalizeOS to ReInitializeOS
+
+###Version 1.3.1 changes (4/5/2017):
+* Added FXML Dialog Wrapper
+* JavaDocs documentation is improved
+* Pom file is improved and updated
+* Now hosted on Maven Central
+
+###Version 1.3.0 changes (3/31/2017):
+* Added MessageBox and Login dialog objects
+* Added Static Class Instantiation Protection
+* Added Database Tools classes (Includes SQLite and H2 databases)
+* All dependencies are now included in jar file
+* JavaDocs documentation is improved
+
+###Version 1.2.0 changes (02/22/2017):
+* Fixed ComputerNameActive and ComputerNamePending not returning accurate value
+* Added ComputerInfo Class
+* Fixed a naming bug since version 1.1 that caused an infinite loop
+* Fixed the java.IO.File.delete calls to now use the java.nio.file.Files.delete
+* Created a demo if the library is run directly
+* Fixed error with RSA generate key pair, it didn't check if save to files was true
+* Fixed error with ConvertBytes function not returning accurate value
+
+###Version 1.1.0 changes (02/18/2017):
+* Created OSInfo, HWInfo, SecurityTools and WebTools classes instead of packages to improve importing.
+* Renamed StringExpanded2 to StringExpandedFromRegistry.
+* Moved tools.osinfo.Enums to just tools.Enums.
+* Finalized JavaDocs. Everything is documented correctly now.
+
+###Version 1.0.0 changes (02/13/2017):
+* Initial Release
