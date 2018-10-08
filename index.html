@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Official Documentation For The Java Ultimate Tools Library"> 
+    <meta name="author" content="Joshua Gager"> 
+    <link rel="shortcut icon" href="./img/favicon.ico">
+
+    <title>Home - Java Ultimate Tools Documentation</title>
+
+    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            <a class="navbar-brand" href=".">Java Ultimate Tools Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="AuthSystem/">Auth System</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="DatabaseTools/">Database Tools</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="Dialogs/">Dialogs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="EventManagement/">Event Management</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="HWInfo/">HWInfo</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="OSInfo/">OSInfo</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="SecurityTools/">Security Tools</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="Utils/">Utils</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="changelog/">Changelog</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fa fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="AuthSystem/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JGCompTech/JavaUltimateTools-Docs/edit/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#welcome-to-java-ultimate-tools-docs">Welcome to Java Ultimate Tools Docs</a></li>
+            <li class="second-level"><a href="#what-is-java-ultimate-tools">What is Java Ultimate Tools?</a></li>
+                
+            <li class="second-level"><a href="#java-ultimate-tools-features">Java Ultimate Tools Features</a></li>
+                
+            <li class="second-level"><a href="#development">Development</a></li>
+                
+            <li class="second-level"><a href="#javadoc">JavaDoc</a></li>
+                
+            <li class="second-level"><a href="#download-jar">Download JAR</a></li>
+                
+            <li class="second-level"><a href="#using-with-maven">Using with Maven</a></li>
+                
+            <li class="second-level"><a href="#license">License</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="welcome-to-java-ultimate-tools-docs">Welcome to Java Ultimate Tools Docs</h1>
+<p><a href="https://travis-ci.org/JGCompTech/JavaUltimateTools"><img alt="Build Status" src="https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master" /></a> <a href="https://search.maven.org/search?q=g:%22com.jgcomptech.tools%22%20AND%20a:%22java-ultimate-tools%22"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.jgcomptech.tools/java-ultimate-tools.svg?label=Maven%20Central" /></a> <a href="https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/"><img alt="Maven Central" src="https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square" /></a> <a href="http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools"><img alt="Javadocs" src="http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square" /></a></p>
+<h2 id="what-is-java-ultimate-tools">What is Java Ultimate Tools?</h2>
+<p>Java Ultimate Tools, or JUT for short, is a large powerful and flexible open-source repository for use in any Java program.</p>
+<h2 id="java-ultimate-tools-features">Java Ultimate Tools Features</h2>
+<ul>
+<li>OSInfo - Contains many classes that return information about the current Windows installation. This includes Architecture, Edition, Name, Product Key, Service Pack, User Info and Version.</li>
+<li>HWInfo - Contains many classes that return information about the current computer hardware. This includes BIOS, Network, OEM, Processor, RAM and Storage.</li>
+<li>SecurityTools - Contains methods surrounding hashing and encryption. Includes methods using MD5, SHA1, SHA256, SHA384 and SHA512. Also includes encryption/decryption with RSA.</li>
+<li>CommandInfo - Allows you to run any console command and will return the result to a string to use within your program. You can also run the command elevated and it will open in a new cmd window and show the results. Note: If elevated, result cannot be returned as a string.</li>
+<li>MessageBox and Login dialogs - Dialogs to use in JavaFX applications</li>
+<li>FXML Dialog Wrapper - Class to wrap a FXML dialog object, reducing the amount of required code</li>
+<li>DatabaseTools - Allows communication with H2, HyperSQL and SQLite databases</li>
+<li>SQL Statement Builders - Allows for using methods instead of native SQL code to generate Prepared Statements</li>
+<li>User Account Management Tools - Includes User Roles, Sessions and Permissions</li>
+<li>Custom Event Manager System - Creates Events similar to the JavaFX Events but not using any JavaFX classes</li>
+<li>Utility Classes - Includes classes for managing collections, numbers and strings</li>
+<li>And Much More!</li>
+</ul>
+<h2 id="development">Development</h2>
+<p>Want to contribute? Great!
+Any help with development is greatly appreciated. If you want to add something or fix any issues please submit a pull request and if it is helpful it may be merged. Please check out our <a href="https://github.com/JGCompTech/JavaUltimateTools/blob/master/code-of-conduct.md">Code of Conduct for Contributors</a>.</p>
+<h2 id="javadoc">JavaDoc</h2>
+<p>The JavaDoc info is hosted at the following 2 locations:
+ - <a href="https://jgcomptech.github.io/JavaUltimateTools/">github.io(Current GitHub Branch)</a>
+ - <a href="http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools">javadoc.io(Current Maven Release)</a>
+ The github.io version is what is stored in the doc folder in the project repository on Github.</p>
+<h2 id="download-jar">Download JAR</h2>
+<p><strong><a href="https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.0">Download v1.5.0</a></strong></p>
+<p>The changelog can be found <a href="https://github.com/JGCompTech/JavaUltimateTools/blob/master/Changelog.txt">here</a>.</p>
+<h2 id="using-with-maven">Using with Maven</h2>
+<p>If you are familiar with <a href="http://maven.apache.org">Maven</a>, add the following XML
+fragments into your pom.xml file. With those settings, your Maven will automatically download our library into your local Maven repository, since our libraries are synchronized with the <a href="http://repo1.maven.org/maven2/com/jgcomptech/tools/java-ultimate-tools/">Maven central repository</a>.</p>
+<pre><code>&lt;dependencies&gt;
+   &lt;dependency&gt;
+      &lt;groupId&gt;com.jgcomptech.tools&lt;/groupId&gt;
+     &lt;artifactId&gt;java-ultimate-tools&lt;/artifactId&gt;
+     &lt;version&gt;1.5.0&lt;/version&gt;
+   &lt;/dependency&gt;
+&lt;/dependencies&gt;
+</code></pre>
+<h2 id="license">License</h2>
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+<p>JavaUltimateTools by J&amp;G CompTech is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>&copy;2018 J&amp;G CompTech</p></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap-3.0.3.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '.';
+    </script>
+    <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2018-10-08 05:39:40
+-->
