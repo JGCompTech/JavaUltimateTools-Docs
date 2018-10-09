@@ -671,7 +671,8 @@
                   <a href="https://github.com/JGCompTech/JavaUltimateTools-Docs/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="welcome-to-java-ultimate-tools-docs">Welcome to Java Ultimate Tools Docs<a class="headerlink" href="#welcome-to-java-ultimate-tools-docs" title="Permanent link">Link</a></h1>
+                <p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"></p>
+<h1 id="welcome-to-java-ultimate-tools-docs">Welcome to Java Ultimate Tools Docs<a class="headerlink" href="#welcome-to-java-ultimate-tools-docs" title="Permanent link">Link</a></h1>
 <p><a href="https://travis-ci.org/JGCompTech/JavaUltimateTools"><img alt="Build Status" src="https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master" /></a> <a href="https://search.maven.org/search?q=g:%22com.jgcomptech.tools%22%20AND%20a:%22java-ultimate-tools%22"><img alt="Maven Central" src="https://img.shields.io/maven-central/v/com.jgcomptech.tools/java-ultimate-tools.svg?label=Maven%20Central" /></a> <a href="https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/"><img alt="Maven Central" src="https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square" /></a> <a href="http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools"><img alt="Javadocs" src="http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square" /></a></p>
 <h2 id="what-is-java-ultimate-tools">What is Java Ultimate Tools?<a class="headerlink" href="#what-is-java-ultimate-tools" title="Permanent link">Link</a></h2>
 <p>Java Ultimate Tools, or JUT for short, is a large powerful and flexible open-source repository for use in any Java program.</p>
@@ -695,25 +696,62 @@
 Any help with development is greatly appreciated. If you want to add something or fix any issues please submit a pull request and if it is helpful it may be merged. Please check out our <a href="https://github.com/JGCompTech/JavaUltimateTools/blob/master/code-of-conduct.md">Code of Conduct for Contributors</a>.</p>
 <h2 id="javadoc">JavaDoc<a class="headerlink" href="#javadoc" title="Permanent link">Link</a></h2>
 <p>The JavaDoc info is hosted at the following 2 locations:
- - <a href="https://jgcomptech.github.io/JavaUltimateTools/">github.io(Current GitHub Branch)</a>
- - <a href="http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools">javadoc.io(Current Maven Release)</a>
- The github.io version is what is stored in the doc folder in the project repository on Github.</p>
+<br/><a href="https://jgcomptech.github.io/JavaUltimateTools/">github.io(Current GitHub Branch)</a> - stored in the doc folder in the project repository on Github
+<br/><a href="http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools">javadoc.io(Current Maven Release)</a> - the released JavaDoc jar on Maven Central</p>
 <h2 id="download-jar">Download JAR<a class="headerlink" href="#download-jar" title="Permanent link">Link</a></h2>
-<p><strong><a href="https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.0">Download v1.5.0</a></strong></p>
+<p><strong><a href="https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.0"><i class="fas fa-download"> Download v1.5.0</i></a></strong></p>
 <p>The changelog can be found <a href="https://github.com/JGCompTech/JavaUltimateTools/blob/master/Changelog.txt">here</a>.</p>
 <h2 id="using-with-maven">Using with Maven<a class="headerlink" href="#using-with-maven" title="Permanent link">Link</a></h2>
 <p>If you are familiar with <a href="http://maven.apache.org">Maven</a>, add the following XML
 fragments into your pom.xml file. With those settings, your Maven will automatically download our library into your local Maven repository, since our libraries are synchronized with the <a href="http://repo1.maven.org/maven2/com/jgcomptech/tools/java-ultimate-tools/">Maven central repository</a>.</p>
-<div class="codehilite"><pre><span></span>&amp;lt;dependencies&amp;gt;
-   &amp;lt;dependency&amp;gt;
-      &amp;lt;groupId&amp;gt;com.jgcomptech.tools&amp;lt;/groupId&amp;gt;
-     &amp;lt;artifactId&amp;gt;java-ultimate-tools&amp;lt;/artifactId&amp;gt;
-     &amp;lt;version&amp;gt;1.5.0&amp;lt;/version&amp;gt;
-   &amp;lt;/dependency&amp;gt;
-&amp;lt;/dependencies&amp;gt;
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">Maven</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>com.jgcomptech.tools<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>java-ultimate-tools<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;version&gt;</span>1.5.0<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
 </pre></div>
-
-
+</td></tr></table></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">Gradle Groovy DSL</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>compile &#39;com.jgcomptech.tools:java-ultimate-tools:1.5.0&#39;
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_1" type="radio" id="__tab_1_2" />
+<label for="__tab_1_2">Gradle Kotlin DSL</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>compile(group = &quot;com.jgcomptech.tools&quot;, name = &quot;java-ultimate-tools&quot;, version = &quot;1.5.0&quot;)
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_1" type="radio" id="__tab_1_3" />
+<label for="__tab_1_3">Scala SBT</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>libraryDependencies += &quot;com.jgcomptech.tools&quot; % &quot;java-ultimate-tools&quot; % &quot;1.5.0&quot;
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_1" type="radio" id="__tab_1_4" />
+<label for="__tab_1_4">Apache Ivy</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt;dependency org=&quot;com.jgcomptech.tools&quot; name=&quot;java-ultimate-tools&quot; rev=&quot;1.5.0&quot; /&gt;
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_1" type="radio" id="__tab_1_5" />
+<label for="__tab_1_5">Groovy Grape</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>@Grapes(
+  @Grab(group=&#39;com.jgcomptech.tools&#39;, module=&#39;java-ultimate-tools&#39;, version=&#39;1.5.0&#39;)
+)
+</pre></div>
+</td></tr></table></div>
+</div>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">Link</a></h2>
 <p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
 <p>JavaUltimateTools by J&amp;G CompTech is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
