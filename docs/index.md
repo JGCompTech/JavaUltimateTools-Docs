@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 # Welcome to Java Ultimate Tools Docs
 [![Build Status](https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master)](https://travis-ci.org/JGCompTech/JavaUltimateTools) [![Maven Central](https://img.shields.io/maven-central/v/com.jgcomptech.tools/java-ultimate-tools.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.jgcomptech.tools%22%20AND%20a:%22java-ultimate-tools%22) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/) [![Javadocs](http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools)
 
@@ -25,30 +27,55 @@ Any help with development is greatly appreciated. If you want to add something o
 
 ##JavaDoc
 The JavaDoc info is hosted at the following 2 locations:
- - [github.io(Current GitHub Branch)](https://jgcomptech.github.io/JavaUltimateTools/)
- - [javadoc.io(Current Maven Release)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools)
- The github.io version is what is stored in the doc folder in the project repository on Github.
+<br/>[github.io(Current GitHub Branch)](https://jgcomptech.github.io/JavaUltimateTools/) - stored in the doc folder in the project repository on Github
+<br/>[javadoc.io(Current Maven Release)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools) - the released JavaDoc jar on Maven Central
 
 ## Download JAR
-**[Download v1.5.0](https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.0)**
+**[<i class="fas fa-download"> Download v1.5.0</i>](https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.0)**
 
-The changelog can be found [here](https://github.com/JGCompTech/JavaUltimateTools/blob/master/Changelog.txt).
+The changelog can be found [[Changelog | here]].
 
 ## Using with Maven
 If you are familiar with [Maven](http://maven.apache.org), add the following XML
 fragments into your pom.xml file. With those settings, your Maven will automatically download our library into your local Maven repository, since our libraries are synchronized with the [Maven central repository](http://repo1.maven.org/maven2/com/jgcomptech/tools/java-ultimate-tools/).
+ 
+``` tab="Maven"
+<dependencies>
+    <dependency>
+        <groupId>com.jgcomptech.tools</groupId>
+        <artifactId>java-ultimate-tools</artifactId>
+        <version>1.5.0</version>
+    </dependency>
+</dependencies>
+```
+ 
+``` tab="Gradle Groovy DSL"
+compile 'com.jgcomptech.tools:java-ultimate-tools:1.5.0'
+```
+ 
+``` tab="Gradle Kotlin DSL"
+compile(group = "com.jgcomptech.tools", name = "java-ultimate-tools", version = "1.5.0")
+```
+ 
+``` tab="Scala SBT"
+libraryDependencies += "com.jgcomptech.tools" % "java-ultimate-tools" % "1.5.0"
+```
 
-    <dependencies>
-       <dependency>
-          <groupId>com.jgcomptech.tools</groupId>
-         <artifactId>java-ultimate-tools</artifactId>
-         <version>1.5.0</version>
-       </dependency>
-    </dependencies>
+``` tab="Apache Ivy"
+<dependency org="com.jgcomptech.tools" name="java-ultimate-tools" rev="1.5.0" />
+```
 
+``` tab="Groovy Grape"
+@Grapes(
+  @Grab(group='com.jgcomptech.tools', module='java-ultimate-tools', version='1.5.0')
+)
+```
+ 
 ## License
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
 JavaUltimateTools by J&G CompTech is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 &copy;2018 J&amp;G CompTech
+
+*[JUT]:  Java Ultimate Tools

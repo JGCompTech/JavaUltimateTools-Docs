@@ -16,3 +16,8 @@ wrapper class that automatically calls runLater if it is needed.
 - FXMLDialogWrapper
     * Allows custom creation of a dialog using a specified JavaFX
     fxml file.
+
+!!! note
+     The MessageBox.Show() method is used throughout this documentation to show messages
+     for demo example purposes. These code statements are not required for the example
+     to function.

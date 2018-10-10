@@ -1,25 +1,71 @@
 site_name: Java Ultimate Tools Documentation
-
 site_description: The Official Documentation For The Java Ultimate Tools Library
 
-theme: cinder
+theme:
+  name: material
+  palette:
+    primary: 'blue grey'
+    accent: 'amber'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  logo:
+    icon: 'settings_applications'
 
 site_author: Joshua Gager
 
-repo_url: https://github.com/JGCompTech/JavaUltimateTools-Docs
-repo_name: GitHub
+repo_name: 'JavaUltimateTools-Docs'
+repo_url: 'https://github.com/JGCompTech/JavaUltimateTools-Docs'
+
+extra:
+  social:
+  - type: 'github'
+    link: 'https://github.com/JGCompTech'
+  - type: 'globe'
+    link: 'https://jgcomptech.com'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - footnotes
+  - abbr
+  - sane_lists
+  - mdx_semanticwikilinks
+  - toc:
+      permalink: Link
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 nav:
-
-- Home: index.md
-- Classes:
-  - Auth System: AuthSystem/index.md
-  - Database Tools: DatabaseTools/index.md
-  - Dialogs: Dialogs/index.md
-  - Event Management: EventManagement/index.md
-  - HWInfo : HWInfo/index.md
-  - OSInfo: OSInfo/index.md
-  - Security Tools: SecurityTools/index.md
-  - Utils : Utils/index.md
-- Changelog: changelog.md
-- JavaDoc: http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools
+  - Home: index.md
+  - Classes:
+    - Auth System:
+      - Intoduction: AuthSystem/index.md
+      - Auth Manager: AuthSystem/AuthManager.md
+      - Permission Manager: AuthSystem/PermissionManager.md
+      - Session Manager: AuthSystem/SessionManager.md
+      - Subject: AuthSystem/Subject.md
+      - User Manager: AuthSystem/UserManager.md
+      - User Role Manager: AuthSystem/UserRoleManager.md
+    - Database Tools: DatabaseTools/index.md
+    - Dialogs: Dialogs/index.md
+    - Event Management: EventManagement/index.md
+    - HWInfo : HWInfo/index.md
+    - OSInfo: OSInfo/index.md
+    - Security Tools: SecurityTools/index.md
+    - Utils : Utils/index.md
+  - Changelog: changelog.md
+  - JavaDoc: http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools
+  - GitHub: https://github.com/JGCompTech/JavaUltimateTools

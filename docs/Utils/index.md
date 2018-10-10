@@ -12,3 +12,5 @@ JUT contains many utils classes to allow for extension and simplification of man
     * Contains methods dealing with numbers and math.
 - StringUtils
     * Contains methods dealing with strings.
+    
+*[JUT]:  Java Ultimate Tools
