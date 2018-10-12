@@ -94,6 +94,38 @@ To check a user account, supply the following parameter:
     else MessageBox.show("Admin User Does Not Exist!");
     ```
     
+###Get Account Creation Date (getUserCreationDate)
+Returns the date and time the user was initially created.
+
+There is two methods to retrieving the user creation date.
+The date can either be returned as a LocalDateTime object or as a formatted string.
+
+####LocalDateTime Object
+To retrieve the user creation date, supply the following parameter:
+
+- Username - The username of the account to lookup
+
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+    final LocalDateTime result = authManager.getUserCreationDate("admin");
+    MessageBox.show("Account Was Created On " + result.format(formatter));
+    ```
+    
+####Formatted String Object
+To retrieve the user creation date, supply the following parameters:
+
+- Username - The username of the account to lookup
+- Format - The string that represents the format to return the date
+
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final String result = authManager.getUserCreationDate("admin", "yyyy-MM-dd HH:mm");
+    MessageBox.show("Account Was Created On " + result);
+    ```
+    
 ###Get User Role (getUserRole)
 Retrieves the UserRole object assigned to the specified user.
 To retrieve the object, supply the following parameter:
@@ -730,8 +762,95 @@ To retrieve a specific user session, supply the following parameters:
     if(result) MessageBox.show("New User Session Is Allowed For Admin!");
     else MessageBox.show("New User Session Is Not Allowed For Admin!");
     ```
+    
+##User Role Methods
+
+###Create A New User Role (createRole)
+To create a new user role use the createRole method supplying the following parameter:
+
+- Name - The name of the new user role
+
+!!! note
+    When using this method the UserRole object related to the new user role is returned.
+    If a user role already exists with the specified name the already existing UserRole
+    object is returned instead.
+    
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final var newRole = authManager.createRole("moderator");
+    newRole.modify().add("edit", "create", "read");
+    ```
+    
+###Add Existing User Role (addExistingRole)
+You can manually create a new UserRole object and directly add that to the list.
+To add an existing user role use the addExistingUserRole method supplying the following parameter:
+
+- UserRole - The UserRole object to add
+    
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final UserRole role = new UserRole("moderator");
+    role.modify().add("edit", "create", "read");
+    authManager.addExistingRole(role);
+    ```
+    
+###Get List Of All Installed User Roles (getRoles)
+Retrieves an unmodifiable list of all user roles.
+
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final Map<String, UserRole> roles = authManager.getRoles();
+    ```
+    
+###Get Specific User Role (getRole)
+Retrieves the specified user role.
+
+To retrieve a user role use the getUserRole method supplying the following parameter:
+
+- Name - The name of the User Role to lookup
+
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final UserRole role = authManager.getRole("admin");
+    ```
 
 ##Other Methods
+
+###Check If User Has Permission (hasPermission)
+Checks if the current username has the specified permission.
+
+To check for the permission, supply the following parameter:
+
+- Permission - The name of the permission to check
+
+The permission manager has the following built in permissions:
+
+- admin
+- edit
+- create
+- read
+
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final boolean result = authManager.userHasPermission("admin");
+    if(result) MessageBox.show("User Has Admin Permission!");
+    else MessageBox.show("User Does Not Have Admin Permission!");
+    ```
+    
+This can also be done with a list of permissions:
+
+!!! example
+    ``` java
+    final var authManager = AuthManager.getInstance();
+    final boolean result = authManager.userHasPermissions(new HashSet<>(Arrays.asList("admin", "edit")));
+    if(result) MessageBox.show("User Has Specified Permissions!");
+    else MessageBox.show("User Does Not Have Specified Permissions!");
+    ```
 
 ###Get All Username Objects (getUsersList)
 Retrieves a readonly immutable UserAccount object for each user

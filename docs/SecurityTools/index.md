@@ -14,3 +14,8 @@ Contains methods surrounding hashing and encryption. Includes methods using MD5,
     * Contains methods dealing with RSA key files.
 - RSAHashes
     * Contains methods dealing with RSA encryption and decryption.
+    
+!!! info
+    This page is a WIP and more documentation is coming soon.
+    
+*[WIP]: Work In Progress

@@ -21,3 +21,8 @@ The OSInfo class returns information about the current operating system.
         * isMac - Identifies if OS is MacOSX.
         * isSolaris - Identifies if OS is Solaris.
         * isWindows - Identifies if OS is Windows.
+        
+!!! info
+    This page is a WIP and more documentation is coming soon.
+    
+*[WIP]: Work In Progress

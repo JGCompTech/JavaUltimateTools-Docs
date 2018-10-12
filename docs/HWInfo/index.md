@@ -18,3 +18,8 @@ The HWInfo class returns information about the currently installed hardware.
     * Returns information about the system RAM.
 - Storage
     * Returns information about the system storage.
+    
+!!! info
+    This page is a WIP and more documentation is coming soon.
+    
+*[WIP]: Work In Progress

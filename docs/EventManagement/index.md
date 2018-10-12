@@ -15,4 +15,8 @@ All events are managed through the Event Manager class.
 - Creation of event handlers to handle fired events
 - The ability to pass arguments to event handlers
 
-*[JUT]:  Java Ultimate Tools
+!!! info
+    This page is a WIP and more documentation is coming soon.
+
+*[JUT]: Java Ultimate Tools
+*[WIP]: Work In Progress

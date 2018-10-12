@@ -19,7 +19,7 @@ Package Name: [com.jgcomptech.tools.authc.SessionManager](https://static.javadoc
     ```
     
 The Session Manager class contains all methods needed for managing
-all login sessions to allow users to login to your application.
+login sessions to allow users to login to your application.
 This includes completing login via either using the UsernamePasswordToken
 or requesting credentials from the user via a login dialog.
 
@@ -478,4 +478,4 @@ To retrieve a specific user session, supply the following parameters:
     else MessageBox.show("New User Session Is Not Allowed For Admin!");
     ```
     
-*[JUT]:  Java Ultimate Tools
+*[JUT]: Java Ultimate Tools

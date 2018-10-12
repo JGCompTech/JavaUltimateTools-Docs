@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 # Welcome to Java Ultimate Tools Docs
-[![Build Status](https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master)](https://travis-ci.org/JGCompTech/JavaUltimateTools) [![Maven Central](https://img.shields.io/maven-central/v/com.jgcomptech.tools/java-ultimate-tools.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.jgcomptech.tools%22%20AND%20a:%22java-ultimate-tools%22) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/) [![Javadocs](http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools)
+[![Build Status](https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master)](https://travis-ci.org/JGCompTech/JavaUltimateTools) [![CircleCI](https://circleci.com/gh/JGCompTech/JavaUltimateTools.svg?style=svg)](https://circleci.com/gh/JGCompTech/JavaUltimateTools) [![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/JGCompTech/JavaUltimateTools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JGCompTech/JavaUltimateTools/context:java) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/280242febbb04309ac1212f3be380baa)](https://app.codacy.com/app/jlgager/JavaUltimateTools?utm_source=github.com&utm_medium=referral&utm_content=JGCompTech/JavaUltimateTools&utm_campaign=Badge_Grade_Dashboard) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/) [![Javadocs](http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools)
 
-##What is Java Ultimate Tools?
+## What is Java Ultimate Tools?
 
 Java Ultimate Tools, or JUT for short, is a large powerful and flexible open-source repository for use in any Java program.
 
-##Java Ultimate Tools Features
+## Java Ultimate Tools Features
 - OSInfo - Contains many classes that return information about the current Windows installation. This includes Architecture, Edition, Name, Product Key, Service Pack, User Info and Version.
 - HWInfo - Contains many classes that return information about the current computer hardware. This includes BIOS, Network, OEM, Processor, RAM and Storage.
 - SecurityTools - Contains methods surrounding hashing and encryption. Includes methods using MD5, SHA1, SHA256, SHA384 and SHA512. Also includes encryption/decryption with RSA.
@@ -21,11 +21,13 @@ Java Ultimate Tools, or JUT for short, is a large powerful and flexible open-sou
 - Utility Classes - Includes classes for managing collections, numbers and strings
 - And Much More!
 
+**NOTE: This Project Has Now Been Updated To Use Java 10!!!**
+
 ## Development
 Want to contribute? Great!
 Any help with development is greatly appreciated. If you want to add something or fix any issues please submit a pull request and if it is helpful it may be merged. Please check out our [Code of Conduct for Contributors](https://github.com/JGCompTech/JavaUltimateTools/blob/master/code-of-conduct.md).
 
-##JavaDoc
+## JavaDoc
 The JavaDoc info is hosted at the following 2 locations:
 <br/>[github.io(Current GitHub Branch)](https://jgcomptech.github.io/JavaUltimateTools/) - stored in the doc folder in the project repository on Github
 <br/>[javadoc.io(Current Maven Release)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools) - the released JavaDoc jar on Maven Central
