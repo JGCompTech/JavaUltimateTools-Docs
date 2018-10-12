@@ -404,6 +404,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#user-role-explanation" title="User Role Explanation" class="md-nav__link">
+    User Role Explanation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-role-manager-methods" title="User Role Manager Methods" class="md-nav__link">
+    User Role Manager Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-user-role-createuserrole" title="Create A New User Role (createUserRole)" class="md-nav__link">
+    Create A New User Role (createUserRole)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-existing-user-role-addexistinguserrole" title="Add Existing User Role (addExistingUserRole)" class="md-nav__link">
+    Add Existing User Role (addExistingUserRole)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-list-of-all-installed-user-roles-getuserroles" title="Get List Of All Installed User Roles (getUserRoles)" class="md-nav__link">
+    Get List Of All Installed User Roles (getUserRoles)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-specific-user-role-getuserrole" title="Get Specific User Role (getUserRole)" class="md-nav__link">
+    Get Specific User Role (getUserRole)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -572,6 +627,61 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#user-role-explanation" title="User Role Explanation" class="md-nav__link">
+    User Role Explanation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-role-manager-methods" title="User Role Manager Methods" class="md-nav__link">
+    User Role Manager Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-user-role-createuserrole" title="Create A New User Role (createUserRole)" class="md-nav__link">
+    Create A New User Role (createUserRole)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-existing-user-role-addexistinguserrole" title="Add Existing User Role (addExistingUserRole)" class="md-nav__link">
+    Add Existing User Role (addExistingUserRole)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-list-of-all-installed-user-roles-getuserroles" title="Get List Of All Installed User Roles (getUserRoles)" class="md-nav__link">
+    Get List Of All Installed User Roles (getUserRoles)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-specific-user-role-getuserrole" title="Get Specific User Role (getUserRole)" class="md-nav__link">
+    Get Specific User Role (getUserRole)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -594,6 +704,108 @@
                 <h1 id="user-role-manager">User Role Manager<a class="headerlink" href="#user-role-manager" title="Permanent link">Link</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">Link</a></h2>
 <p>Package Name: <a href="https://static.javadoc.io/com.jgcomptech.tools/java-ultimate-tools/1.5.0/com/jgcomptech/tools/authc/UserRoleManager.html">com.jgcomptech.tools.authc.UserRoleManager</a></p>
+<p>The User Role Manager class contains all methods needed for managing
+User Roles that can be assigned to a User Account.</p>
+<h2 id="user-role-explanation">User Role Explanation<a class="headerlink" href="#user-role-explanation" title="Permanent link">Link</a></h2>
+<p>Role-based Access Control (<abbr title="Role-based Access Control">RBAC</abbr>) is a common approach to restricting system access to authorized users.
+A user role defines permissions for a user to perform a group of tasks.
+Although every role has a predefined set of permissions,
+new permissions can be added and removed from each role.
+New custom roles can also be created as a new role or a copy of an existing role.</p>
+<p>The base permissions are (Descriptions are based on a <abbr title="Content Management System">CMS</abbr> implementation and are just examples):</p>
+<ul>
+<li>Admin - Allows changes to system settings.</li>
+<li>Edit - Allows editing of all content even other user's content.</li>
+<li>Create - Allows creation of new content and editing of own content.</li>
+<li>Read - Allows viewing of all content.</li>
+</ul>
+<p>The base user roles are (Descriptions are based on a <abbr title="Content Management System">CMS</abbr> implementation and are just examples):</p>
+<ul>
+<li>Admin(Admin, Edit, Create, Read) - Has all permissions.</li>
+<li>Editor(Edit, Create, Read) - Can create and edit all content but not change system settings.</li>
+<li>Author(Create, Read) - Can create new content but not edit other users content.</li>
+<li>Basic(Read) - Can read all content but not create or edit content.</li>
+<li>None() - Has no permissions.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently <abbr title="Java Ultimate Tools">JUT</abbr> is designed to allow a user to be assigned only one user role.
+This will be changing in future releases to allow for assignment of multiple roles.</p>
+</div>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">Link</a></h2>
+<p>The User Role Manager is a singleton class and on first use is initialized automatically.
+The following code can be used to retrieve the instance:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">final</span> <span class="n">var</span> <span class="n">manager</span> <span class="o">=</span> <span class="n">UserRoleManager</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+</pre></div>
+</td></tr></table></p>
+<h2 id="user-role-manager-methods">User Role Manager Methods<a class="headerlink" href="#user-role-manager-methods" title="Permanent link">Link</a></h2>
+<h3 id="create-a-new-user-role-createuserrole">Create A New User Role (createUserRole)<a class="headerlink" href="#create-a-new-user-role-createuserrole" title="Permanent link">Link</a></h3>
+<p>To create a new user role use the createUserRole method supplying the following parameter:</p>
+<ul>
+<li>Name - The name of the new user role</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using this method the UserRole object related to the new user role is returned.
+If a user role already exists with the specified name the already existing UserRole
+object is returned instead.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">final</span> <span class="n">var</span> <span class="n">userRoleManager</span> <span class="o">=</span> <span class="n">UserRoleManager</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+<span class="kd">final</span> <span class="n">var</span> <span class="n">newRole</span> <span class="o">=</span> <span class="n">userRoleManager</span><span class="o">.</span><span class="na">createUserRole</span><span class="o">(</span><span class="s">&quot;moderator&quot;</span><span class="o">);</span>
+<span class="n">newRole</span><span class="o">.</span><span class="na">modify</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;edit&quot;</span><span class="o">,</span> <span class="s">&quot;create&quot;</span><span class="o">,</span> <span class="s">&quot;read&quot;</span><span class="o">);</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<h3 id="add-existing-user-role-addexistinguserrole">Add Existing User Role (addExistingUserRole)<a class="headerlink" href="#add-existing-user-role-addexistinguserrole" title="Permanent link">Link</a></h3>
+<p>You can manually create a new UserRole object and directly add that to the list.
+To add an existing user role use the addExistingUserRole method supplying the following parameter:</p>
+<ul>
+<li>UserRole - The UserRole object to add</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">final</span> <span class="n">var</span> <span class="n">userRoleManager</span> <span class="o">=</span> <span class="n">UserRoleManager</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+<span class="kd">final</span> <span class="n">UserRole</span> <span class="n">role</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserRole</span><span class="o">(</span><span class="s">&quot;moderator&quot;</span><span class="o">);</span>
+<span class="n">role</span><span class="o">.</span><span class="na">modify</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;edit&quot;</span><span class="o">,</span> <span class="s">&quot;create&quot;</span><span class="o">,</span> <span class="s">&quot;read&quot;</span><span class="o">);</span>
+<span class="n">userRoleManager</span><span class="o">.</span><span class="na">addExistingUserRole</span><span class="o">(</span><span class="n">role</span><span class="o">);</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<h3 id="get-list-of-all-installed-user-roles-getuserroles">Get List Of All Installed User Roles (getUserRoles)<a class="headerlink" href="#get-list-of-all-installed-user-roles-getuserroles" title="Permanent link">Link</a></h3>
+<p>Retrieves an unmodifiable list of all user roles.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">final</span> <span class="n">var</span> <span class="n">userRoleManager</span> <span class="o">=</span> <span class="n">UserRoleManager</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+<span class="kd">final</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">UserRole</span><span class="o">&gt;</span> <span class="n">roles</span> <span class="o">=</span> <span class="n">userRoleManager</span><span class="o">.</span><span class="na">getUserRoles</span><span class="o">();</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<h3 id="get-specific-user-role-getuserrole">Get Specific User Role (getUserRole)<a class="headerlink" href="#get-specific-user-role-getuserrole" title="Permanent link">Link</a></h3>
+<p>Retrieves the specified user role.</p>
+<p>To retrieve a user role use the getUserRole method supplying the following parameter:</p>
+<ul>
+<li>Name - The name of the User Role to lookup</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">final</span> <span class="n">var</span> <span class="n">userRoleManager</span> <span class="o">=</span> <span class="n">UserRoleManager</span><span class="o">.</span><span class="na">getInstance</span><span class="o">();</span>
+<span class="kd">final</span> <span class="n">UserRole</span> <span class="n">role</span> <span class="o">=</span> <span class="n">userRoleManager</span><span class="o">.</span><span class="na">getUserRole</span><span class="o">(</span><span class="s">&quot;admin&quot;</span><span class="o">);</span>
+</pre></div>
+</td></tr></table>
+
+</div>
                 
                   
                 
