@@ -1,5 +1,12 @@
 #JUT Version Changelog
 
+###Version 1.5.1 changes (10/13/2018):
+* Added new userHasPermissions method overload to AuthManager
+* Added new userHasPermissions method overload to Subject
+* Fixed bugs and missing methods in Subject
+* Fixed deprecated methods in NativeMethods
+* Fixed other small bugs
+
 ###Version 1.5.0 changes (10/07/2018):
 * **Updated JDK to Java 10**
 * Login Dialogs now don't require the use of Platform.runLater()

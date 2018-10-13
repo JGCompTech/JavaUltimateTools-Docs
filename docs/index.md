@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 # Welcome to Java Ultimate Tools Docs
-[![Build Status](https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master)](https://travis-ci.org/JGCompTech/JavaUltimateTools) [![CircleCI](https://circleci.com/gh/JGCompTech/JavaUltimateTools.svg?style=svg)](https://circleci.com/gh/JGCompTech/JavaUltimateTools) [![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/JGCompTech/JavaUltimateTools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JGCompTech/JavaUltimateTools/context:java) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/280242febbb04309ac1212f3be380baa)](https://app.codacy.com/app/jlgager/JavaUltimateTools?utm_source=github.com&utm_medium=referral&utm_content=JGCompTech/JavaUltimateTools&utm_campaign=Badge_Grade_Dashboard) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/) [![Javadocs](http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools)
+[![Build Status](https://travis-ci.org/JGCompTech/JavaUltimateTools.svg?branch=master)](https://travis-ci.org/JGCompTech/JavaUltimateTools) [![CircleCI](https://circleci.com/gh/JGCompTech/JavaUltimateTools.svg?style=svg)](https://circleci.com/gh/JGCompTech/JavaUltimateTools) [![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/JGCompTech/JavaUltimateTools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JGCompTech/JavaUltimateTools/context:java) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.jgcomptech.tools/java-ultimate-tools/) [![Javadocs](http://www.javadoc.io/badge/com.jgcomptech.tools/java-ultimate-tools.svg?style=flat-square)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools)
 
 ## What is Java Ultimate Tools?
 
@@ -27,13 +27,16 @@ Java Ultimate Tools, or JUT for short, is a large powerful and flexible open-sou
 Want to contribute? Great!
 Any help with development is greatly appreciated. If you want to add something or fix any issues please submit a pull request and if it is helpful it may be merged. Please check out our [Code of Conduct for Contributors](https://github.com/JGCompTech/JavaUltimateTools/blob/master/code-of-conduct.md).
 
+## Documentation
+The documentation for JUT is currently a work in progress and new changes will be occurring soon.
+
 ## JavaDoc
 The JavaDoc info is hosted at the following 2 locations:
 <br/>[github.io(Current GitHub Branch)](https://jgcomptech.github.io/JavaUltimateTools/) - stored in the doc folder in the project repository on Github
 <br/>[javadoc.io(Current Maven Release)](http://www.javadoc.io/doc/com.jgcomptech.tools/java-ultimate-tools) - the released JavaDoc jar on Maven Central
 
 ## Download JAR
-**[<i class="fas fa-download"> Download v1.5.0</i>](https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.0)**
+**[<i class="fas fa-download"> Download v1.5.1</i>](https://github.com/JGCompTech/JavaUltimateTools/releases/tag/v1.5.1)**
 
 The changelog can be found [[Changelog | here]].
 
@@ -46,30 +49,30 @@ fragments into your pom.xml file. With those settings, your Maven will automatic
     <dependency>
         <groupId>com.jgcomptech.tools</groupId>
         <artifactId>java-ultimate-tools</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.1</version>
     </dependency>
 </dependencies>
 ```
  
 ``` tab="Gradle Groovy DSL"
-compile 'com.jgcomptech.tools:java-ultimate-tools:1.5.0'
+compile 'com.jgcomptech.tools:java-ultimate-tools:1.5.1'
 ```
  
 ``` tab="Gradle Kotlin DSL"
-compile(group = "com.jgcomptech.tools", name = "java-ultimate-tools", version = "1.5.0")
+compile(group = "com.jgcomptech.tools", name = "java-ultimate-tools", version = "1.5.1")
 ```
  
 ``` tab="Scala SBT"
-libraryDependencies += "com.jgcomptech.tools" % "java-ultimate-tools" % "1.5.0"
+libraryDependencies += "com.jgcomptech.tools" % "java-ultimate-tools" % "1.5.1"
 ```
 
 ``` tab="Apache Ivy"
-<dependency org="com.jgcomptech.tools" name="java-ultimate-tools" rev="1.5.0" />
+<dependency org="com.jgcomptech.tools" name="java-ultimate-tools" rev="1.5.1" />
 ```
 
 ``` tab="Groovy Grape"
 @Grapes(
-  @Grab(group='com.jgcomptech.tools', module='java-ultimate-tools', version='1.5.0')
+  @Grab(group='com.jgcomptech.tools', module='java-ultimate-tools', version='1.5.1')
 )
 ```
  
